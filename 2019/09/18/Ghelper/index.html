@@ -9,7 +9,7 @@
     <meta name="keywords" content="技术">
 
 
-<title>记录一下使用git遇到的问题 | 王畅的博客</title>
+<title>谷歌上网助手 | 王畅的博客</title>
 
 
 
@@ -99,14 +99,14 @@
         <div id="post-toc" class="post-toc">
             <span class="post-toc-title">catalogue</span>
             <div class="post-toc-content">
-                <ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#解决一"><span class="toc-text">解决一:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#解决二"><span class="toc-text">解决二:</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用"><span class="toc-text">使用</span></a></li></ol>
             </div>
         </div>
     
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">记录一下使用git遇到的问题</h1>
+            <h1 class="post-title">谷歌上网助手</h1>
             
                 <div class="post-meta">
                     
@@ -115,24 +115,22 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">August 28, 2019&nbsp;&nbsp;15:34:58</a>
+                        Date: <a href="#">September 18, 2019&nbsp;&nbsp;13:17:21</a>
                         </span>
                     
-                    
-                        <span class="post-category">
-                    Category:
-                            
-                                <a href="/categories/git/">git</a>
-                            
-                        </span>
                     
                 </div>
             
         </header>
 
         <section class="post-content">
-            <ul>
-<li>“error: Your local changes to the following files would be overwritten by merge”<br> 场景:同事提交a文件,自己在本地对a文件做了修改,修改完想 pull 时提示上面的错误<h5 id="解决一"><a href="#解决一" class="headerlink" title="解决一:"></a>解决一:</h5>第一步: <code>git stash</code> 先把你修改过的被追踪的文件和暂存的变更——并将它保存到一个未完结变更的堆栈中(随时可以重新应用)<br>第二步: <code>git pull</code>  拉取代码到本地(此时不会报error)<br>第三步: <code>git stash pop</code> 从git栈中获取到最近一次stash进去的内容，恢复工作区的内容。。获取之后，会删除栈中对应的stash。  (由于可能会stash多次，git使用栈管理，我们可以使用<code>git stash list</code>查看所有的stash , <code>git stash clear</code>: 清空Git栈。)<br>第四步: 手动解决冲突<br>第五步: <code>commit</code> + <code>push</code>  <h5 id="解决二"><a href="#解决二" class="headerlink" title="解决二:"></a>解决二:</h5>第一步: <code>add</code> + <code>commit</code><br>第二步: <code>pull</code> 此时会提示自动合并失败,需要去手动合并<br>第二步: 手动合并冲突<br>第四步: <code>add</code> + <code>commit</code> + <code>push</code></li>
+            <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
+<li>进入 <a href="http://googlehelper.net/" target="_blank" rel="noopener">http://googlehelper.net/</a>  下载压缩包 - 解压  </li>
+<li>打开：谷歌浏览器 - 设置 - 更多工具 - 扩展设置（或者直接在浏览器地址栏输入：chrome://extensions/）  </li>
+<li>打开右上角的开发者模式 - 点击【加载已解压的扩展程序】，选择解压出来的【ghelper_source】目录 - 确认<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3></li>
+<li>确保上一步中加载的插件开启，如下图：<br><a href="https://note.youdao.com/yws/public/resource/21149059100827a79759baeff0e86fe2/xmlnote/ECDCAD304B8B45939678294154775FE2/3208" target="_blank" rel="noopener">avatar</a></li>
+<li>在浏览器找到插件图标<br><a href="https://note.youdao.com/yws/public/resource/21149059100827a79759baeff0e86fe2/xmlnote/0EE48A63699D46D29614C9D3145F7F04/3218" target="_blank" rel="noopener">avatar</a></li>
+<li>点击登录帐户 - 按照提示注册登录即可</li>
 </ul>
 
         </section>
@@ -148,7 +146,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://wangchang.fun/2019/08/28/git-question/">http://wangchang.fun/2019/08/28/git-question/</a></span>
+                        <span><a href="http://wangchang.fun/2019/09/18/Ghelper/">http://wangchang.fun/2019/09/18/Ghelper/</a></span>
                     </p>
                 
                 
@@ -171,12 +169,6 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
-                    
-                        <a href="/tags/git/"># git</a>
-                    
-                        <a href="/tags/git报错/"># git报错</a>
-                    
-                        
                 </span>
             </div>
             <div>
@@ -187,8 +179,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2019/08/28/title/">welcome</a>
             
+            <a class="next" rel="next" href="/2019/09/03/httpHerder/">http header 参数详解</a>
             
         </section>
 
