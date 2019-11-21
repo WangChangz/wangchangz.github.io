@@ -9,7 +9,7 @@
     <meta name="keywords" content="技术">
 
 
-<title>lock | 王畅的博客</title>
+<title>锁 | 王畅的博客</title>
 
 
 
@@ -99,14 +99,14 @@
         <div id="post-toc" class="post-toc">
             <span class="post-toc-title">catalogue</span>
             <div class="post-toc-content">
-                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#锁"><span class="toc-text">锁</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关键词解释"><span class="toc-text">关键词解释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#出现原因"><span class="toc-text">出现原因</span></a></li></ol>
             </div>
         </div>
     
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">lock</h1>
+            <h1 class="post-title">锁</h1>
             
                 <div class="post-meta">
                     
@@ -124,7 +124,44 @@
         </header>
 
         <section class="post-content">
-            <h3 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h3>
+            <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>在计算机中，是协调多个进程或线程并发访问某一资源的一种机制。 </p>
+<h3 id="关键词解释"><a href="#关键词解释" class="headerlink" title="关键词解释"></a>关键词解释</h3><p>隔离级别 (√为会发生,×为不会发生) </p>
+<table>
+<thead>
+<tr>
+<th>隔离级别</th>
+<th align="center">脏读</th>
+<th align="center">不可重复读</th>
+<th align="right">幻读</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>read uncommitted（未提交读）</td>
+<td align="center">√</td>
+<td align="center">√</td>
+<td align="right">√</td>
+</tr>
+<tr>
+<td>read committed（提交读）</td>
+<td align="center">×</td>
+<td align="center">√</td>
+<td align="right">√</td>
+</tr>
+<tr>
+<td>repeatable read（可重复读）</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="right">√</td>
+</tr>
+<tr>
+<td>serialization（可串行化）</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="right">×</td>
+</tr>
+</tbody></table>
+<h3 id="出现原因"><a href="#出现原因" class="headerlink" title="出现原因"></a>出现原因</h3><p>多个用户同时更新同一条记录</p>
+
         </section>
 
         
@@ -161,6 +198,10 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/锁-mysql/"># 锁 mysql</a>
+                    
+                        
                 </span>
             </div>
             <div>
